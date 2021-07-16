@@ -1,7 +1,8 @@
+import './Card.css';
 function Card(props){
     return (
         <div>
-            <h4>{props.text}</h4>
+            <h4 className = "card-shape">{props.text}</h4>
         </div>
     );
 }
