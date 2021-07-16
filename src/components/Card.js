@@ -1,7 +1,7 @@
-function Card(){
+function Card(props){
     return (
         <div>
-            <h4>This is some text</h4>
+            <h4>{props.text}</h4>
         </div>
     );
 }
