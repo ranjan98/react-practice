@@ -21,14 +21,16 @@ const AddCard = () => {
             inputValue: enteredValue
         }
         console.log(cardData);
+        setEnteredInput('');
+        setEnteredValue('');
     }
 
     return (
         <form onSubmit={submitHandler}>
             <label>Example Input</label>
-            <input type="text" onChange={inputEventHandler} />
+            <input type="text" value={enteredInput} onChange={inputEventHandler} />
             <label>Example Value</label>
-            <input type="text" onChange={valueEventHandler} />
+            <input type="text" value={enteredValue} onChange={valueEventHandler} />
             <button type="submit"> Add Card </button>
         </form>
     );
