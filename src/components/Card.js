@@ -10,7 +10,7 @@ function Card(props){
     }
     return (
         <div>
-            <h4 className = "card-shape">{outputText}</h4>
+            <h4 className = "card-shape">{outputText + " " + props.val}</h4>
             <button onClick={changeText}>Change Text</button>
         </div>
     );
