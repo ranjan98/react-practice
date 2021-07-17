@@ -1,4 +1,5 @@
 import Card from './components/Card';
+import AddCard from './components/AddCard';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <h2> Something Here </h2>
+      <AddCard />
       <Card text = {textArr[0]} />
       <Card text = {textArr[1]} />
       <Card text = {textArr[2]} />
