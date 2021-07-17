@@ -17,8 +17,8 @@ const AddCard = (props) => {
     const submitHandler = (event) => {
         event.preventDefault(); // Prevents default behavior of submitting the form
         const cardData = {
-            inputText: enteredInput,
-            inputValue: enteredValue
+            text: enteredInput,
+            value: enteredValue,
         }
         // console.log(cardData);
         props.onAddNewCard(cardData);
