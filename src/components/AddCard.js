@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddCard = () => {
+const AddCard = (props) => {
 
     // Using Multiple States - one way
     const [enteredInput, setEnteredInput] = useState('');
@@ -20,7 +20,8 @@ const AddCard = () => {
             inputText: enteredInput,
             inputValue: enteredValue
         }
-        console.log(cardData);
+        // console.log(cardData);
+        props.onAddNewCard(cardData);
         setEnteredInput('');
         setEnteredValue('');
     }
