@@ -34,11 +34,11 @@ function App() {
     });
   }
   return (
-    <div>
+    <>
       <h2> Something Here </h2>
       <AddCard onAddNewCard={addCardHandler} />
       {items.map((item, index) => <Card text={item.text} val={item.value} key={index} />)}
-    </div>
+    </>
   );
 }
 
